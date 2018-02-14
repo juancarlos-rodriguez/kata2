@@ -14,7 +14,18 @@ public class FactorPrimoTests {
     public void testEsPrimo() {
         FactorPrimo instance = new FactorPrimo();
 
+        Assert.assertTrue("El numero es no primo", instance.esPrimo(2));
         Assert.assertTrue("El numero es no primo", instance.esPrimo(3));
+        Assert.assertTrue("El numero es no primo", instance.esPrimo(5));
+        Assert.assertTrue("El numero es no primo", instance.esPrimo(7));
+        Assert.assertTrue("El numero es no primo", instance.esPrimo(11));
+
+        Assert.assertFalse("El numero es primo", instance.esPrimo(1));
+        Assert.assertFalse("El numero es primo", instance.esPrimo(4));
+        Assert.assertFalse("El numero es primo", instance.esPrimo(6));
+        Assert.assertFalse("El numero es primo", instance.esPrimo(8));
+        Assert.assertFalse("El numero es primo", instance.esPrimo(9));
+
 
     }
 
