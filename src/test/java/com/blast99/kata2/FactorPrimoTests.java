@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -36,9 +37,9 @@ public class FactorPrimoTests {
     @Test
     public void testListaDeNumPrimos(){
         FactorPrimo instance = new FactorPrimo();
-        ArrayList<Integer> listaEsperada = new ArrayList<>();
+        ArrayList<Integer> listaEsperada19 = new ArrayList<>(Arrays.asList(2, 3, 5, 7 ,11 ,13, 17, 19));
 
-        Assert.assertEquals("La lista no es correcta", listaEsperada, instance.listaDeNumPrimos(10));
+        Assert.assertEquals("Las listas no coinciden", listaEsperada19, instance.listaDeNumPrimos(19));
 
     }
 
