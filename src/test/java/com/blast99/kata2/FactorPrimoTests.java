@@ -37,9 +37,18 @@ public class FactorPrimoTests {
     @Test
     public void testListaDeNumPrimos(){
         FactorPrimo instance = new FactorPrimo();
-        ArrayList<Integer> listaEsperada19 = new ArrayList<>(Arrays.asList(2, 3, 5, 7 ,11 ,13, 17, 19));
 
+        ArrayList<Integer> listaEsperada19 = new ArrayList<>(Arrays.asList(2, 3, 5, 7 ,11 ,13, 17, 19));
         Assert.assertEquals("Las listas no coinciden", listaEsperada19, instance.listaDeNumPrimos(19));
+
+        ArrayList<Integer> listaEsperada1 = new ArrayList<>();
+        Assert.assertEquals("Las listas no coinciden", listaEsperada1, instance.listaDeNumPrimos(1));
+
+        ArrayList<Integer> listaEsperadaMenos15 = new ArrayList<>();
+        Assert.assertEquals("Las listas no coinciden", listaEsperadaMenos15, instance.listaDeNumPrimos(-15));
+
+        ArrayList<Integer> listaEsperada107 = new ArrayList<>(Arrays.asList(2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107));
+        Assert.assertEquals("Las listas no coinciden", listaEsperada107, instance.listaDeNumPrimos(107));
 
     }
 
