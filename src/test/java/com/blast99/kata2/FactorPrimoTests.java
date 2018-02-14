@@ -6,6 +6,8 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class FactorPrimoTests {
@@ -28,6 +30,15 @@ public class FactorPrimoTests {
         Assert.assertFalse("El numero es primo", instance.esPrimo(8));
         Assert.assertFalse("El numero es primo", instance.esPrimo(9));
 
+
+    }
+
+    @Test
+    public void testListaDeNumPrimos(){
+        FactorPrimo instance = new FactorPrimo();
+        ArrayList<Integer> listaEsperada = new ArrayList<>();
+
+        Assert.assertArrayEquals("La lista no es correcta", listaEsperada, instance.listaDeNumPrimos(10));
 
     }
 
