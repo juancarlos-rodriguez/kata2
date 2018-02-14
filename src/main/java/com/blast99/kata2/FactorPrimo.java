@@ -31,9 +31,8 @@ public class FactorPrimo {
 
     public ArrayList<Integer> generate(int number) {
         ArrayList<Integer> factoresPrimos = new ArrayList<>();
-        ArrayList<Integer> listaPrimos = listaDeNumPrimos(number);
 
-        for (int primo : listaPrimos) {
+        for (int primo : listaDeNumPrimos(number)) {
             while (number % primo == 0) {
                 factoresPrimos.add(primo);
                 number = number / primo;
