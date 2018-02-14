@@ -38,7 +38,7 @@ public class FactorPrimoTests {
         FactorPrimo instance = new FactorPrimo();
         ArrayList<Integer> listaEsperada = new ArrayList<>();
 
-        Assert.assertArrayEquals("La lista no es correcta", listaEsperada, instance.listaDeNumPrimos(10));
+        Assert.assertEquals("La lista no es correcta", listaEsperada, instance.listaDeNumPrimos(10));
 
     }
 

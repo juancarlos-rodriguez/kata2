@@ -1,5 +1,7 @@
 package com.blast99.kata2;
 
+import java.util.ArrayList;
+
 public class FactorPrimo {
 
     public boolean esPrimo(int number) {
@@ -11,5 +13,13 @@ public class FactorPrimo {
         }
 
         return true;
+    }
+
+    public ArrayList<Integer> listaDeNumPrimos(int number) {
+
+        ArrayList<Integer> listaPrimos = new ArrayList<>();
+
+        return listaPrimos;
+
     }
 }
