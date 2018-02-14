@@ -19,7 +19,7 @@ public class FactorPrimo {
 
         ArrayList<Integer> listaPrimos = new ArrayList<>();
 
-        for (int i = 1; i <= number; i++) {
+        for (int i = 2; i <= number; i++) {
             if (esPrimo(i)) {
                 listaPrimos.add(i);
             }
