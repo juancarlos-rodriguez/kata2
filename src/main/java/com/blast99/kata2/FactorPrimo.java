@@ -33,6 +33,13 @@ public class FactorPrimo {
         ArrayList<Integer> factoresPrimos = new ArrayList<>();
         ArrayList<Integer> listaPrimos = listaDeNumPrimos(number);
 
+        for (int primo : listaPrimos) {
+            while (number % primo == 0) {
+                factoresPrimos.add(primo);
+                number = number / primo;
+            }
+        }
+
         return factoresPrimos;
     }
 }
