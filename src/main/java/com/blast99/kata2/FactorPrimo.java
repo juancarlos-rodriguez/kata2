@@ -31,6 +31,7 @@ public class FactorPrimo {
 
     public ArrayList<Integer> generate(int number) {
         ArrayList<Integer> factoresPrimos = new ArrayList<>();
+        ArrayList<Integer> listaPrimos = listaDeNumPrimos(number);
 
         return factoresPrimos;
     }
