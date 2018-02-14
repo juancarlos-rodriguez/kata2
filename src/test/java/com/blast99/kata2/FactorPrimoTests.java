@@ -20,6 +20,7 @@ public class FactorPrimoTests {
         Assert.assertTrue("El numero es no primo", instance.esPrimo(7));
         Assert.assertTrue("El numero es no primo", instance.esPrimo(11));
 
+        Assert.assertFalse("El numero es primo", instance.esPrimo(0));
         Assert.assertFalse("El numero es primo", instance.esPrimo(1));
         Assert.assertFalse("El numero es primo", instance.esPrimo(4));
         Assert.assertFalse("El numero es primo", instance.esPrimo(6));
