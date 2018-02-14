@@ -28,4 +28,10 @@ public class FactorPrimo {
         return listaPrimos;
 
     }
+
+    public ArrayList<Integer> generate(int number) {
+        ArrayList<Integer> factoresPrimos = new ArrayList<>();
+
+        return factoresPrimos;
+    }
 }

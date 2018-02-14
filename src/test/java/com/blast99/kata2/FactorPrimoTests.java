@@ -56,8 +56,8 @@ public class FactorPrimoTests {
     public void testGenerate() {
         FactorPrimo instance = new FactorPrimo();
 
-        ArrayList<Integer> factoresPrimos = new ArrayList<>();
-        Assert.assertEquals("Las listas no coinciden", factoresPrimos, instance.generate(2));
+        ArrayList<Integer> listaEsperadaFactoresPrimos = new ArrayList<>();
+        Assert.assertEquals("Las listas no coinciden", listaEsperadaFactoresPrimos, instance.generate(2));
     }
 
 }
