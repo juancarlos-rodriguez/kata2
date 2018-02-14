@@ -10,5 +10,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class FactorPrimoTests {
 
+    @Test
+    public void testEsPrimo() {
+        FactorPrimo instance = new FactorPrimo();
+
+    }
 
 }
